@@ -520,6 +520,7 @@ padding-left: 35px;
     margin-right:10px;
 }
 .social-link:hover, .social-link:focus{
+    cursor: pointer;
 background-color: var(--blue-color);
 }
 .client:hover{
