@@ -525,7 +525,8 @@ background-color: var(--blue-color);
 }
 .client:hover{
     border-color: var(--blue-color);
-    fill:var(--blue-color)
+    fill:var(--blue-color);
+    cursor: pointer;
 }
 .client02{
     border-color: var(--blue-color);
