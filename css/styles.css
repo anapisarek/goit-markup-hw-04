@@ -11,6 +11,7 @@
     --color-two: #ECECEC;
     --color-three: #000000;
     --color-04:#AFB1B8;
+    --footer-socialmedia-icon: rgba(255, 255, 255, 0.1);
 }
 *,
 *::before,
@@ -103,14 +104,14 @@ span[mail]{
    cursor: pointer;
 }
 h1{
-    background-color: var(--footer-color);
     color:var(--light-color);
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
     padding-top: 200px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 250px;
+    padding-right: 250px;
+    letter-spacing: 0.06em;
     text-align: center;
     
 }
@@ -126,7 +127,7 @@ h1{
     width:200px;
     height: 50px;
     align-items: center;
-    margin-bottom: 210px;
+    margin-bottom: 200px;
     margin-left: 500px;
     
 
@@ -228,6 +229,7 @@ text-decoration: none;
 }
 .container{
     width: 1200px;
+    margin:0 auto;
 }
 .section-nav{
     border: 1px solid var(--color-two);
@@ -261,10 +263,6 @@ text-decoration: none;
     color: var(--contact-color);
 gap:46px;
 padding-left: 200px;}
-
-.section-motto{
-    background:url("images/team.jpg") #2f303a no-repeat center;
-    }
 .section-lorem{
     display:flex;
     list-style: none;
@@ -452,18 +450,25 @@ justify-content: center;
 padding-left: 35px;
 }
 .nav-svg01{
-    width: 130px;
-    height: 16px;
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
+    color:var(--contact-color);
 }
 .nav-svg02{
-    width: 200px;
+    width: 10px;
     height: 16px;
     margin-right: 10px;
 }
-.nav-svg01:hover{
-    color: var(--blue-color);
+.nav-svg01:hover,
+.nav-svg01:focus {
+stroke: var(--blue-color);
 }
+.nav-svg02:hover,
+.nav-svg02:focus {
+  stroke: var(--blue-color);
+}
+ 
 .clients{
     display: inline-flex;
     list-style: none;
@@ -499,15 +504,14 @@ padding-left: 35px;
     line-height: 1.14;
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
     padding-top: 10px;
    
 }
 .social-links{
     margin-top: 20px;
-    padding-left: 30px;
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 .social-links2{
     margin-top: 20px;
@@ -515,17 +519,28 @@ padding-left: 35px;
     flex-direction: row;
 }
 .social-link{
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+    align-items: center;
+}
+.social-media-border{
+    display: flex;
+align-items: center;
     width: 44px;
     height: 44px;
-    margin-right:10px;
+    background-color: var(--footer-socialmedia-icon);
+    border-radius: 50px;
 }
-.social-link:hover, .social-link:focus{
+.social-media-border:hover, 
+.social-media-border:focus{
     cursor: pointer;
 background-color: var(--blue-color);
+
 }
 .client:hover{
     border-color: var(--blue-color);
-    fill:var(--blue-color);
+    color:var(--blue-color);
     cursor: pointer;
 }
 .client02{
@@ -535,3 +550,114 @@ background-color: var(--blue-color);
 display: flex;
 flex-direction: column;
 }
+.media{
+    background-color: #FFFFFF;
+    width: 44px;
+    height: 44px;
+}
+.media1{
+    color: solid #AFB1B8;
+}
+.section-background-1 {
+    background:linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 50%
+      ),
+      url(../images/team.jpg);
+    max-width: 1600px;
+  }
+  .list-clients {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+.team-icon {
+    margin-right: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .team-icon-border {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+  }  
+  .list-icons {
+    text-decoration: none;
+  }
+  .team-icon-border:hover,
+  .team-icon-border:focus {
+    --color3: var(--light-color);
+    background-color: var(--blue-color);
+  }  
+  .list-social-media {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+  }
+  .social-media-icon {
+    margin-right: 20px;
+    --color3: var(--light-color);
+  }
+  .social-media-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+    padding-top: 12px;
+  }
+  .social-media-icon-border:hover,
+.social-media-icon-border:focus {
+  background-color: var(--blue-color);
+}
+.social-media-icon-border{
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+}
+.list-clients {
+    display: flex;
+    justify-content: center;
+  }
+  .item-client {
+    margin-right: 30px;
+    list-style: none;
+    margin-top: 50px;
+    padding-bottom: 94px;
+  justify-content: center;
+
+  }
+  .item-border {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+  .item-border:hover,
+.item-border:focus {
+  border: 1px solid var(--blue-color);
+  --color3: var(--blue-color);
+  --color2: var(--blue-color);
+}
+.list-icons {
+    list-style: none;
+  }
+  .social-media-icon-border{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-socialmedia-icon);
+    border-radius: 50px;}
