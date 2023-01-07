@@ -661,3 +661,5 @@ flex-direction: column;
     height: 44px;
     background-color: var(--footer-socialmedia-icon);
     border-radius: 50px;}
+    .icon-twitter{
+        fill:#afb1b8;}
